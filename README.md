@@ -1,4 +1,4 @@
-# cos49-final-project
+# cos429-final-project
 COS429 Computer Vision Spring 2023 Final Project
 
 Final report Google doc: https://docs.google.com/document/d/104d2UEVS41fCGmcRdiTcj14bQqtaFpfaH6v5hjXi6SU/edit
