@@ -1,0 +1,3 @@
+[submodule "ClipBERT"]
+	path = ClipBERT
+	url = https://github.com/tanushreebanerjee/ClipBERT.git
