@@ -7,3 +7,5 @@ Final report Overleaf: https://www.overleaf.com/read/qvgrnvgzbjwy
 
 Milestone report: https://docs.google.com/document/d/16N0q1wXjStNJWRM5hDTloudgxLLPIVsHdo1ILbK1ciE/edit
 
+Meeting notes: https://docs.google.com/document/d/16wT1tizZ1jArVA3FQJVAdui_f7I4GFsYKqlJM_95GoI/edit
+
