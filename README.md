@@ -1,8 +1,12 @@
 # cos429-final-project
 
-COS429 Computer Vision Spring 2023 Final Project
+COS429: Computer Vision, Spring 2023 
+
+Final Project codebase
 
 Authors: Tanushree Banerjee, Brian Lou, Ameya Vaidya
+
+## Relevant documents
 
 [Final report Google doc](https://docs.google.com/document/d/104d2UEVS41fCGmcRdiTcj14bQqtaFpfaH6v5hjXi6SU/edit)
 
