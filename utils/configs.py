@@ -1,3 +1,5 @@
+RANDOM_SEED = 429
+
 ROOT = ".."
 DATA_DIR = f"{ROOT}/data"
 
