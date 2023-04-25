@@ -18,4 +18,4 @@ Authors: Tanushree Banerjee, Brian Lou, Ameya Vaidya
 
 ## Setup
 
-`conda create --name <env> --file requirements.txt`
+`conda create --name pytorchvideo --file requirements.txt`
