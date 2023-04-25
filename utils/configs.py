@@ -23,6 +23,8 @@ num_crops = 3
 KINETICS_400_DATASET_URL = "https://dl.fbaipublicfiles.com/pyslowfast/dataset/class_names/kinetics_classnames.json"
 KINETICS_400_DATASET_FILENAME = f"{DATA_DIR}/kinetics_classnames.json"
 
+DATASET_DIR = f"{DATA_DIR}/kinetics400"
+
 # sample video
 SAMPLE_VIDEO_URL = "https://dl.fbaipublicfiles.com/pytorchvideo/projects/archery.mp4"
 SAMPLE_VIDEO_PATH = f'{DATA_DIR}/archery.mp4'
