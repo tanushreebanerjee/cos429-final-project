@@ -7,3 +7,5 @@ Final report Overleaf: https://www.overleaf.com/read/qvgrnvgzbjwy
 
 Milestone report: https://docs.google.com/document/d/16N0q1wXjStNJWRM5hDTloudgxLLPIVsHdo1ILbK1ciE/edit
 
+## Setup
+''' conda create --name <env> --file requirements.txt ''' 
