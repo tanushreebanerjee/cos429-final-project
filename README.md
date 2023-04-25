@@ -13,5 +13,6 @@ Authors: Tanushree Banerjee, Brian Lou, Ameya Vaidya
 
 ## Setup
 
-`conda create --name pytorchvideo --file requirements.txt`  
-`conda activate pytorchvideo`  
+Run the following shell script:
+
+`bash setup.sh`
