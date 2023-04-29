@@ -16,6 +16,3 @@ Authors: Tanushree Banerjee, Brian Lou, Ameya Vaidya
 Run the following shell script:
 
 `bash setup.sh`
-
-
-Ameya Test
