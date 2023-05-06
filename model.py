@@ -5,12 +5,11 @@ from transformers import AutoImageProcessor, VideoMAEForVideoClassification
 from tqdm import tqdm
 from clip_sampler import get_frames_from_video_path
 from torch.utils.data import TensorDataset, SequentialSampler, DataLoader
-
 class VideoMAEModel():
     def __init__(self):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.image_processor = AutoImageProcessor.from_pretrained("MCG-NJU/videomae-base-finetuned-kinetics")
-        self.model = VideoMAEForVideoClassification.from_pretrained("MCG-NJU/videomae-base-finetuned-kinetics").cuda()
+        self.model = VideoMAEForVideoClassification.from_pretrained("MCG-NJU/videomae-base-finetuned-kinetics").cuda()\
 
     def preprocess_videos(self, indices, video_paths, sampling_strategy, num_frames=16, frame_rate=1):
       inputs = []

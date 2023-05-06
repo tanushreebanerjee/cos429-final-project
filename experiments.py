@@ -7,6 +7,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 import pandas as pd
 from torch.utils.data import TensorDataset, SequentialSampler, DataLoader
 
+
 def run_experiment(model, sampling_strategy, video_paths, batch_size = 10, num_examples=100, num_frames=16, frame_rate = 1, seed=10):
   random.seed(seed)
   num_correct = 0
