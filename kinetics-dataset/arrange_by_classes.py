@@ -11,7 +11,7 @@ train:  240258      246534      1392
 val:    19881       19906       0
 """
 
-SPLITS = ['test', 'train', 'val']
+SPLITS = ['val']
 
 def load_label(csv):
     table = np.loadtxt(csv, skiprows=1, dtype=str, delimiter=',')
@@ -46,13 +46,14 @@ def main(args):
     replace = list((path / 'replacement/replacement_for_corrupted_k400').glob('*.mp4'))
     replace_videos = {str(p.stem)[:11]:p for p in replace}
 
-    video_parent = path / 'videos'
+    video_parent = path / 'val'
 
     for split in SPLITS:
         print(f'Working on: {split}')
         # create output path
-        split_video_path = video_parent / split
+        split_video_path = video_parent 
         split_video_path.mkdir(exist_ok=True, parents=True)
+        print(path)
         split_final = collect_dict(path, split, replace_videos)
         print(f'Found {len(split_final)} videos in split: {split}')
         labels = set(split_final.values())
