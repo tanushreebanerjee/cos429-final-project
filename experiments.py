@@ -15,9 +15,7 @@ def run_experiment(model, sampling_strategy, video_paths, batch_size = 10, num_e
   model_inputs = model.preprocess_videos(indices, video_paths, sampling_strategy, num_frames, frame_rate)
   dataset = TensorDataset(model_inputs)
   prediction_ids = model.batch_predict(dataset, batch_size).cpu()
-  # predicted_labels = [model.model.config.id2label[pred_id] for pred_id in prediction_ids]
-  predicted_labels = [model.model.config.id2label[pred_id] for pred_id in prediction_ids if pred_id in model.model.config.id2label]
-  print(predicted_labels)
+  predicted_labels = [model.model.config.id2label[pred_id.item()] for pred_id in prediction_ids]
   actual_labels = [video_paths[x].parent.name for x in indices]
 
   video_paths_arr = []
