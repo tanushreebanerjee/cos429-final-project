@@ -4,7 +4,7 @@ grooming horse,grooming horse,kinetics-dataset/val/grooming horse/1RYKyKAYZOQ_00
 crying,eating spaghetti,kinetics-dataset/val/crying/IfFZalicJ_U_000001_000011.mp4,IfFZalicJ_U,completely-random,3513,False
 spraying,spraying,kinetics-dataset/val/spraying/NPYa_aJXLyk_000435_000445.mp4,NPYa_aJXLyk,completely-random,3953,True
 playing ice hockey,playing ice hockey,kinetics-dataset/val/playing ice hockey/7D4VHpfoPak_000053_000063.mp4,7D4VHpfoPak,completely-random,4735,True
-knitting,sharpening pencil,kinetics-dataset/val/knitting/-neqpygEoXs_000026_000036.mp4,-neqpygEoXs,completely-random,121,False
+knitting,knitting,kinetics-dataset/val/knitting/-neqpygEoXs_000026_000036.mp4,-neqpygEoXs,completely-random,121,True
 pole vault,pole vault,kinetics-dataset/val/pole vault/KmCTA-KaEJw_000037_000047.mp4,KmCTA-KaEJw,completely-random,1688,True
 playing accordion,playing accordion,kinetics-dataset/val/playing accordion/fK4kD8fXswE_000037_000047.mp4,fK4kD8fXswE,completely-random,3789,True
 crossing river,crossing river,kinetics-dataset/val/crossing river/luTkBLIT6lU_000036_000046.mp4,luTkBLIT6lU,completely-random,6662,True
@@ -40,13 +40,13 @@ riding mountain bike,riding mountain bike,kinetics-dataset/val/riding mountain b
 giving or receiving award,giving or receiving award,kinetics-dataset/val/giving or receiving award/lXM8u5_0wbI_000012_000022.mp4,lXM8u5_0wbI,completely-random,2483,True
 counting money,counting money,kinetics-dataset/val/counting money/-2vdj0y_rI4_000055_000065.mp4,-2vdj0y_rI4,completely-random,5421,True
 arm wrestling,arm wrestling,kinetics-dataset/val/arm wrestling/pe9mvKRYwk4_000002_000012.mp4,pe9mvKRYwk4,completely-random,2970,True
-juggling balls,juggling balls,kinetics-dataset/val/juggling balls/NHITrFTUvMw_000002_000012.mp4,NHITrFTUvMw,completely-random,1089,True
+juggling balls,shooting basketball,kinetics-dataset/val/juggling balls/NHITrFTUvMw_000002_000012.mp4,NHITrFTUvMw,completely-random,1089,False
 side kick,side kick,kinetics-dataset/val/side kick/sZ8JiPfAoWc_000005_000015.mp4,sZ8JiPfAoWc,completely-random,3743,True
 frying vegetables,frying vegetables,kinetics-dataset/val/frying vegetables/WP1YCgYMOlI_000242_000252.mp4,WP1YCgYMOlI,completely-random,6290,True
 motorcycling,motorcycling,kinetics-dataset/val/motorcycling/CVPjZGMWIUM_000025_000035.mp4,CVPjZGMWIUM,completely-random,7045,True
 balloon blowing,balloon blowing,kinetics-dataset/val/balloon blowing/HB_pjEi1YXA_000071_000081.mp4,HB_pjEi1YXA,completely-random,1961,True
 playing cards,playing cards,kinetics-dataset/val/playing cards/RBCijFK_fBI_000027_000037.mp4,RBCijFK_fBI,completely-random,3601,True
-unboxing,unboxing,kinetics-dataset/val/unboxing/sufeABe_H1I_000170_000180.mp4,sufeABe_H1I,completely-random,5024,True
+unboxing,building cabinet,kinetics-dataset/val/unboxing/sufeABe_H1I_000170_000180.mp4,sufeABe_H1I,completely-random,5024,False
 crawling baby,crawling baby,kinetics-dataset/val/crawling baby/CR_3tjerNNs_000041_000051.mp4,CR_3tjerNNs,completely-random,3073,True
 sneezing,yawning,kinetics-dataset/val/sneezing/Ij_3UvY3b8E_000000_000010.mp4,Ij_3UvY3b8E,completely-random,362,False
 climbing a rope,climbing a rope,kinetics-dataset/val/climbing a rope/NfH4FZhrtvE_000002_000012.mp4,NfH4FZhrtvE,completely-random,4775,True
@@ -67,11 +67,11 @@ skiing slalom,skiing (not slalom or crosscountry),kinetics-dataset/val/skiing sl
 spinning poi,spinning poi,kinetics-dataset/val/spinning poi/7LOtcLB5-VA_000079_000089.mp4,7LOtcLB5-VA,completely-random,3850,True
 headbanging,headbanging,kinetics-dataset/val/headbanging/GNKAiDaDBug_000005_000015.mp4,GNKAiDaDBug,completely-random,532,True
 eating hotdog,eating hotdog,kinetics-dataset/val/eating hotdog/CZezk_EbMOY_000107_000117.mp4,CZezk_EbMOY,completely-random,5349,True
-climbing a rope,climbing a rope,kinetics-dataset/val/climbing a rope/6Lz09qQhHkM_000001_000011.mp4,6Lz09qQhHkM,completely-random,4788,True
+climbing a rope,pole vault,kinetics-dataset/val/climbing a rope/6Lz09qQhHkM_000001_000011.mp4,6Lz09qQhHkM,completely-random,4788,False
 plastering,spray painting,kinetics-dataset/val/plastering/RTVJWp5Nu-s_000152_000162.mp4,RTVJWp5Nu-s,completely-random,2659,False
-cooking sausages,cooking sausages,kinetics-dataset/val/cooking sausages/fXb_RVaU_MA_000328_000338.mp4,fXb_RVaU_MA,completely-random,6914,True
+cooking sausages,air drumming,kinetics-dataset/val/cooking sausages/fXb_RVaU_MA_000328_000338.mp4,fXb_RVaU_MA,completely-random,6914,False
 bench pressing,bench pressing,kinetics-dataset/val/bench pressing/3q0f6BJx_V8_000002_000012.mp4,3q0f6BJx_V8,completely-random,4111,True
-zumba,zumba,kinetics-dataset/val/zumba/hhUoOAyFy38_000008_000018.mp4,hhUoOAyFy38,completely-random,1281,True
+zumba,doing aerobics,kinetics-dataset/val/zumba/hhUoOAyFy38_000008_000018.mp4,hhUoOAyFy38,completely-random,1281,False
 waxing back,waxing chest,kinetics-dataset/val/waxing back/_3yfcMBAA38_000415_000425.mp4,_3yfcMBAA38,completely-random,6899,False
 drinking shots,sniffing,kinetics-dataset/val/drinking shots/0fmNdKx4cdI_000003_000013.mp4,0fmNdKx4cdI,completely-random,1837,False
 bobsledding,bobsledding,kinetics-dataset/val/bobsledding/ZLQkCemE_Xs_000318_000328.mp4,ZLQkCemE_Xs,completely-random,3382,True

@@ -19,7 +19,7 @@ class VideoMAEModel():
         video_frames = get_frames_from_video_path(sampling_strategy, video_path, num_frames, frame_rate)
         inp = self.image_processor(list(video_frames), return_tensors="pt")
         inputs.append(inp["pixel_values"][0])
-      all_inputs = torch.stack([x for x in inputs]).to(self.device)
+      all_inputs = torch.stack(inputs).to(self.device)
       return all_inputs
 
 
