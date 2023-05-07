@@ -1,0 +1,11 @@
+Actual Label,Predicted Label,Video Path,Video ID,Sampling Strategy,Video Index,Correct
+sword fighting,mopping floor,kinetics-dataset/val/sword fighting/WGztQjJ0aMU_000010_000020.mp4,WGztQjJ0aMU,obj-detection-top4,4680,False
+grooming horse,grooming horse,kinetics-dataset/val/grooming horse/1RYKyKAYZOQ_000096_000106.mp4,1RYKyKAYZOQ,obj-detection-top4,266,True
+crying,crying,kinetics-dataset/val/crying/IfFZalicJ_U_000001_000011.mp4,IfFZalicJ_U,obj-detection-top4,3513,True
+spraying,riding a bike,kinetics-dataset/val/spraying/NPYa_aJXLyk_000435_000445.mp4,NPYa_aJXLyk,obj-detection-top4,3953,False
+playing ice hockey,playing ice hockey,kinetics-dataset/val/playing ice hockey/7D4VHpfoPak_000053_000063.mp4,7D4VHpfoPak,obj-detection-top4,4735,True
+knitting,brushing teeth,kinetics-dataset/val/knitting/-neqpygEoXs_000026_000036.mp4,-neqpygEoXs,obj-detection-top4,121,False
+pole vault,pole vault,kinetics-dataset/val/pole vault/KmCTA-KaEJw_000037_000047.mp4,KmCTA-KaEJw,obj-detection-top4,1688,True
+playing accordion,playing accordion,kinetics-dataset/val/playing accordion/fK4kD8fXswE_000037_000047.mp4,fK4kD8fXswE,obj-detection-top4,3789,True
+crossing river,crossing river,kinetics-dataset/val/crossing river/luTkBLIT6lU_000036_000046.mp4,luTkBLIT6lU,obj-detection-top4,6662,True
+peeling apples,peeling apples,kinetics-dataset/val/peeling apples/64YG9guik-A_000003_000013.mp4,64YG9guik-A,obj-detection-top4,4024,True

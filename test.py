@@ -6,6 +6,7 @@ import json
 from tqdm import trange, tqdm
 import numpy as np
 from experiments import run_experiment
+from experiments_runall import run_experiment_all
 import pickle
 import json
 
@@ -17,4 +18,5 @@ with open('data/kinetics400/validate/validate.json') as f:
     annotations_dict = json.load(f)
 
 model = VideoMAEModel()  
-run_experiment(model, "random-sequential", video_paths, batch_size = 10)
+
+run_experiment_all(model, "obj-detection-all", video_paths, seed = 20, num_frames=16, num_examples = 250, outer_batch_size = 250, batch_size = 25)

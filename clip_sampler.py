@@ -12,23 +12,47 @@ image_processor = AutoImageProcessor.from_pretrained("hustvl/yolos-tiny")
 model = AutoModelForObjectDetection.from_pretrained("hustvl/yolos-tiny").cuda()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-def sample_obj_detection_nonseq(images, num_frams):
+def sample_obj_detection(frame_type, images, num_frames):
     num_objects_list = [0] * len(images)
+    # Get number of objs per frame
     for i in range(len(images)):
         image = images[i]
         inputs = image_processor(images=image, return_tensors="pt").to(device)
         outputs = model(**inputs)
 
         # target_sizes = torch.tensor([image.size[::-1]])
-        results = image_processor.post_process_object_detection(outputs, threshold=0.9)[
-            0
-        ]
+        results = image_processor.post_process_object_detection(outputs, threshold=0.9)[0]
         num_objects = 0
         for score, label, box in zip(results["scores"], results["labels"], results["boxes"]):
             if score.item() > 0.9:
                 num_objects += 1
         num_objects_list[i] = num_objects
-    return images[np.sort(np.argpartition(num_objects_list, num_frams)[:num_frams])]
+    frames = []
+    if frame_type == "obj-detection-top16" or frame_type == "obj-detection-all":
+        indices = np.sort(np.argpartition(num_objects_list, -16)[-16:])
+        frames.append(images[indices])
+    if frame_type == "obj-detection-low16" or frame_type == "obj-detection-all":
+        indices = np.sort(np.argpartition(num_objects_list, 16)[:16])
+        frames.append(images[indices])
+    if frame_type == "obj-detection-top8" or frame_type == "obj-detection-all":
+        indices = np.argpartition(num_objects_list, -8)[-8:]
+        indices = np.sort(np.repeat(indices, 2))
+        frames.append(images[indices])
+    if frame_type == "obj-detection-top4" or frame_type == "obj-detection-all":
+        indices = np.argpartition(num_objects_list, -4)[-4:]
+        indices = np.sort(np.repeat(indices, 4))
+        frames.append(images[indices])
+    if frame_type == "obj-detection-top1" or frame_type == "obj-detection-all":
+        indices = np.argmax(num_objects_list)
+        indices = np.repeat(indices, 16)
+        frames.append(images[indices])
+    if frame_type == "obj-detection-mixed" or frame_type == "obj-detection-all":
+        top = np.argpartition(num_objects_list, -8)[-8:]
+        low = np.argpartition(num_objects_list, 8)[:8]
+        indices = np.concatenate((top,low)) 
+        indices = np.sort(indices)
+        frames.append(images[indices])
+    return frames
   
   
 def sample_random_indices(clip_len, frame_sample_rate, seg_len):
@@ -119,10 +143,13 @@ def get_frames_from_video_path(frame_type, video_path, num_frames, frame_sample_
       indices = sample_fourths(num_frames, frame_sample_rate, seg_len)
     elif frame_type == "all":
       return get_all_frames_from_container(container)
-    elif frame_type == "obj_detction_nonseq":
-      return sample_obj_detection_nonseq(get_all_frames_from_container(container), num_frames)
     elif "optical-flow" in frame_type:
       indices = sample_optical_flow_indices(frame_type, video_path, seg_len, container, flow_dict, flow_id_dict)
     
     frames = get_frames_from_container(container, indices)
     return frames
+
+def get_frames_from_video_path_all_strats(frame_type, video_path, num_frames):
+    container = av.open(str(video_path.resolve()))
+    seg_len = container.streams.video[0].frames
+    return sample_obj_detection(frame_type, get_all_frames_from_container(container), num_frames)
