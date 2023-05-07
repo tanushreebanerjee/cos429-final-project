@@ -28,6 +28,7 @@ def sample_obj_detection_nonseq(images, num_frams):
                 num_objects += 1
         num_objects_list[i] = num_objects
     return images[np.sort(np.argpartition(num_objects_list, num_frams)[:num_frams])]
+  
         
 def sample_random_indices(clip_len, frame_sample_rate, seg_len):
     converted_len = int(clip_len * frame_sample_rate)
