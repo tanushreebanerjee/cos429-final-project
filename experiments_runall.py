@@ -19,10 +19,14 @@ def run_experiment_all(model, sampling_strategy, video_paths, batch_size = 10, o
 
   num_correct = 0
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+  
   if sampling_strategy == "obj-detection-all":
       SAMPLING_STRATS = ["obj-detection-top16","obj-detection-low16","obj-detection-top8","obj-detection-top4","obj-detection-top1","obj-detection-mixed"]
+  elif sampling_strategy == "position-all":
+      SAMPLING_STRATS = ["position-fourths","position_beginning","position_middle","position_end","position-mixed"]
   else:
       SAMPLING_STRATS = [sampling_strategy]
+      
   master_predicted_labels = [[] for i in range(len(SAMPLING_STRATS))]
   master_actual_labels = [[] for i in range(len(SAMPLING_STRATS))]
 

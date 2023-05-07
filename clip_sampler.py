@@ -69,8 +69,6 @@ def truly_random_indices(num_frames, frame_sample_rate, seg_len):
     indices.sort()
     return indices
 
-
-
 def sample_fourths(num_frames, frame_sample_rate, seg_len):
     one = random.randint(0, int(0.25 * seg_len))
     two = random.randint(int(0.25 * seg_len), int(0.5 * seg_len))
@@ -79,6 +77,49 @@ def sample_fourths(num_frames, frame_sample_rate, seg_len):
 
     final = ([one] * 4) + ([two] * 4) + ([three] * 4) + ([four] * 4)
     return final
+
+
+def sample_positions(frame_type, images, num_frames, seg_len):
+    frames = []
+    if frame_type == "position-fourths" or frame_type == "position-all":
+        indices = sample_fourths(num_frames, 1, seg_len)
+        indices.sort()
+        frames.append(images[indices])
+    if frame_type == "position_beginning" or frame_type == "position-all":
+        vals = range(int(seg_len/3))
+        if len(vals) < 16:
+            indices = random.sample(range(16), 16)
+        else:
+            indices = random.sample(vals, 16)
+        indices.sort()
+        frames.append(images[indices])
+    if frame_type == "position_middle" or frame_type == "position-all":
+        vals = range(int(seg_len/3), int(2*seg_len/3))
+        if len(vals) < 16:
+            border = (seg_len - 16) // 2
+            indices = random.sample(range(border, border + 16), 16)
+        else:
+            indices = random.sample(vals, 16)
+        indices.sort()
+        frames.append(images[indices])
+    if frame_type == "position_end" or frame_type == "position-all":
+        vals = range(int(2*seg_len/3), seg_len)
+        if len(vals) < 16:
+            indices = random.sample(range(seg_len-16, seg_len), 16)
+        else:
+            indices = random.sample(vals, 16)
+        indices.sort()
+        frames.append(images[indices])
+    if frame_type == "position-mixed" or frame_type == "position-all":
+        indices = [0]
+        indices += random.sample(range(1, int(seg_len/3)), 5) + random.sample(range(int(seg_len/3), int(2*seg_len/3)), 5) + random.sample(range(int(2*seg_len/3), seg_len), 5)
+        indices.sort()
+        frames.append(images[indices])
+        
+    return frames
+    
+
+  
 
 def uniform_sample_indices(seg_len, percent_of_frames):
   num_examples = percent_of_frames * seg_len
@@ -152,4 +193,8 @@ def get_frames_from_video_path(frame_type, video_path, num_frames, frame_sample_
 def get_frames_from_video_path_all_strats(frame_type, video_path, num_frames):
     container = av.open(str(video_path.resolve()))
     seg_len = container.streams.video[0].frames
-    return sample_obj_detection(frame_type, get_all_frames_from_container(container), num_frames)
+    
+    if "obj-detection" in frame_type:
+      return sample_obj_detection(frame_type, get_all_frames_from_container(container), num_frames)
+    elif "position" in frame_type:
+      return sample_positions(frame_type, get_all_frames_from_container(container), num_frames, seg_len)
