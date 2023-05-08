@@ -81,40 +81,43 @@ def sample_fourths(num_frames, frame_sample_rate, seg_len):
 
 def sample_positions(frame_type, images, num_frames, seg_len):
     frames = []
-    if frame_type == "position-fourths" or frame_type == "position-all":
-        indices = sample_fourths(num_frames, 1, seg_len)
-        indices.sort()
-        frames.append(images[indices])
+    # if frame_type == "position-fourths" or frame_type == "position-all":
+    #     indices = sample_fourths(num_frames, 1, seg_len)
+    #     indices.sort()
+    #     frames.append(images[indices])
     if frame_type == "position_beginning" or frame_type == "position-all":
         vals = range(int(seg_len/3))
-        if len(vals) < 16:
-            indices = random.sample(range(16), 16)
+        if len(vals) < num_frames:
+            indices = random.sample(range(num_frames), num_frames)
         else:
-            indices = random.sample(vals, 16)
+            indices = random.sample(vals, num_frames)
+        indices = np.repeat(indices, 16 // num_frames)
         indices.sort()
         frames.append(images[indices])
     if frame_type == "position_middle" or frame_type == "position-all":
         vals = range(int(seg_len/3), int(2*seg_len/3))
-        if len(vals) < 16:
-            border = (seg_len - 16) // 2
-            indices = random.sample(range(border, border + 16), 16)
+        if len(vals) < num_frames:
+            border = (seg_len - num_frames) // 2
+            indices = random.sample(range(border, border + num_frames), num_frames)
         else:
-            indices = random.sample(vals, 16)
+            indices = random.sample(vals, num_frames)
+        indices = np.repeat(indices, 16 // num_frames)
         indices.sort()
         frames.append(images[indices])
     if frame_type == "position_end" or frame_type == "position-all":
         vals = range(int(2*seg_len/3), seg_len)
-        if len(vals) < 16:
-            indices = random.sample(range(seg_len-16, seg_len), 16)
+        if len(vals) < num_frames:
+            indices = random.sample(range(seg_len-num_frames, seg_len), num_frames)
         else:
-            indices = random.sample(vals, 16)
+            indices = random.sample(vals, num_frames)
+        indices = np.repeat(indices, 16 // num_frames)
         indices.sort()
         frames.append(images[indices])
-    if frame_type == "position-mixed" or frame_type == "position-all":
-        indices = [0]
-        indices += random.sample(range(1, int(seg_len/3)), 5) + random.sample(range(int(seg_len/3), int(2*seg_len/3)), 5) + random.sample(range(int(2*seg_len/3), seg_len), 5)
-        indices.sort()
-        frames.append(images[indices])
+    # if frame_type == "position-mixed" or frame_type == "position-all":
+    #     indices = [0]
+    #     indices += random.sample(range(1, int(seg_len/3)), 5) + random.sample(range(int(seg_len/3), int(2*seg_len/3)), 5) + random.sample(range(int(2*seg_len/3), seg_len), 5)
+    #     indices.sort()
+    #     frames.append(images[indices])
         
     return frames
     

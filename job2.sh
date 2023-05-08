@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=cv  # create a short name for your job
+#SBATCH --job-name=cv2  # create a short name for your job
 #SBATCH --nodes=1                # node count
 #SBATCH --ntasks=1      # number of tasks per nodes
 #SBATCH --cpus-per-task=8        # cpu-cores per task (>1 if multi-threaded tasks)
@@ -17,4 +17,4 @@ conda activate cos429
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/scratch/gpfs/blou/.conda/envs/cos429/lib/
 
-python test.py
+python test2.py

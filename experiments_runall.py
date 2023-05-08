@@ -24,7 +24,8 @@ def run_experiment_all(model, sampling_strategy, video_paths, batch_size = 10, o
   if sampling_strategy == "obj-detection-all":
       SAMPLING_STRATS = ["obj-detection-top16","obj-detection-low16","obj-detection-top8","obj-detection-top4","obj-detection-top1","obj-detection-mixed"]
   elif sampling_strategy == "position-all":
-      SAMPLING_STRATS = ["position-fourths","position_beginning","position_middle","position_end","position-mixed"]
+    #   SAMPLING_STRATS = ["position-fourths","position_beginning","position_middle","position_end","position-mixed"]
+      SAMPLING_STRATS = ["position_beginning","position_middle","position_end"]
   else:
       SAMPLING_STRATS = [sampling_strategy]
       

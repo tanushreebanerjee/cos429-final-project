@@ -20,5 +20,8 @@ with open('data/kinetics400/validate/validate.json') as f:
 
 model = VideoMAEModel()  
 
-indices = np.array(get_missclassified("outputs/random-num-10-250-1.csv"))
-run_theoretical_best(model, "theoretical-best", video_paths, indices, seed = 10, num_frames=16, num_examples = 250, outer_batch_size = 20, batch_size = 25)
+# indices = np.array(get_missclassified("outputs/random-num-10-250-1.csv"))
+# run_theoretical_best(model, "theoretical-best", video_paths, indices, seed = 10, num_frames=16, num_examples = 250, outer_batch_size = 20, batch_size = 25)
+
+run_experiment_all(model, "position-all", video_paths, seed = 10, num_frames=8, num_examples = 250, outer_batch_size = 250, batch_size = 25)
+run_experiment_all(model, "position-all", video_paths, seed = 20, num_frames=8, num_examples = 250, outer_batch_size = 250, batch_size = 25)
