@@ -5,6 +5,8 @@ from transformers import AutoImageProcessor, VideoMAEForVideoClassification
 from tqdm import tqdm
 from clip_sampler import get_frames_from_video_path, get_frames_from_video_path_all_strats
 from torch.utils.data import TensorDataset, SequentialSampler, DataLoader
+from utils import get_all_frames_from_container
+
 class VideoMAEModel():
     def __init__(self):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -50,3 +52,21 @@ class VideoMAEModel():
         all_inputs = torch.stack(input).to(self.device)
         output.append(all_inputs)
       return output
+    
+    def preprocess_all_frames(self, indices, video_paths, stride=5):
+      inputs = []
+      video_frame_idxs = []
+      for i in tqdm(indices, desc = "Preprocessing:"):
+        video_frame_idxs_temp = []
+        video_path = video_paths[i]
+        container = av.open(str(video_path.resolve()))
+        video_frames = get_all_frames_from_container(container)
+        inputs_per_video = []
+        for j in range(0, len(video_frames), stride):
+          experiment_frames = video_frames[[j] * 16] 
+          video_frame_idxs_temp.append(j)
+          inp = self.image_processor(list(experiment_frames), return_tensors="pt")
+          inputs_per_video.append(inp["pixel_values"][0])
+        inputs.append(inputs_per_video)
+        video_frame_idxs.append(video_frame_idxs_temp)
+      return inputs, video_frame_idxs
