@@ -1,0 +1,251 @@
+Actual Label,Predicted Label,Video Path,Video ID,Sampling Strategy,Video Index,Correct
+playing tennis,playing tennis,kinetics-dataset/val/playing tennis/R5CWAwtijVI_001618_001628.mp4,R5CWAwtijVI,random-num,5921,True
+riding mountain bike,shaking hands,kinetics-dataset/val/riding mountain bike/RsKWxtQRseg_000122_000132.mp4,RsKWxtQRseg,random-num,5621,False
+skiing (not slalom or crosscountry),skiing (not slalom or crosscountry),kinetics-dataset/val/skiing (not slalom or crosscountry)/5tV4H4r3sDI_000716_000726.mp4,5tV4H4r3sDI,random-num,6444,True
+frying vegetables,frying vegetables,kinetics-dataset/val/frying vegetables/-eJVHxmkm-4_000204_000214.mp4,-eJVHxmkm-4,random-num,6279,True
+playing recorder,playing recorder,kinetics-dataset/val/playing recorder/bRI6igVE5sU_000035_000045.mp4,bRI6igVE5sU,random-num,7208,True
+tap dancing,country line dancing,kinetics-dataset/val/tap dancing/X7k8twydJIU_000237_000247.mp4,X7k8twydJIU,random-num,1238,False
+dancing gangnam style,dancing gangnam style,kinetics-dataset/val/dancing gangnam style/5sCpQpPVwD0_000028_000038.mp4,5sCpQpPVwD0,random-num,2128,True
+shaving head,shaving head,kinetics-dataset/val/shaving head/SaOe9f3f3Zg_000354_000364.mp4,SaOe9f3f3Zg,random-num,5521,True
+playing drums,playing drums,kinetics-dataset/val/playing drums/FzmnCCZXJJs_000169_000179.mp4,FzmnCCZXJJs,random-num,5207,True
+jumping into pool,jumping into pool,kinetics-dataset/val/jumping into pool/-2csq_1UhMQ_000002_000012.mp4,-2csq_1UhMQ,random-num,6957,True
+throwing discus,throwing discus,kinetics-dataset/val/throwing discus/hseVr8WcD-k_000002_000012.mp4,hseVr8WcD-k,random-num,831,True
+beatboxing,busking,kinetics-dataset/val/beatboxing/XAcMiXAKtE8_000004_000014.mp4,XAcMiXAKtE8,random-num,7144,False
+opening present,folding clothes,kinetics-dataset/val/opening present/1f0Nce2SgOE_000996_001006.mp4,1f0Nce2SgOE,random-num,2682,False
+reading book,waxing legs,kinetics-dataset/val/reading book/PsiGCxGW12A_000086_000096.mp4,PsiGCxGW12A,random-num,4693,False
+hoverboarding,yoga,kinetics-dataset/val/hoverboarding/tANnjywlx1w_000023_000033.mp4,tANnjywlx1w,random-num,1387,False
+making pizza,making pizza,kinetics-dataset/val/making pizza/Mknk8iYDx4U_000263_000273.mp4,Mknk8iYDx4U,random-num,221,True
+bobsledding,skydiving,kinetics-dataset/val/bobsledding/-SWFnl5p1Xc_000125_000135.mp4,-SWFnl5p1Xc,random-num,3371,False
+disc golfing,disc golfing,kinetics-dataset/val/disc golfing/_owWHGvn_b0_000112_000122.mp4,_owWHGvn_b0,random-num,3332,True
+shredding paper,riding mechanical bull,kinetics-dataset/val/shredding paper/ps78Pxo0u_c_000096_000106.mp4,ps78Pxo0u_c,random-num,614,False
+throwing discus,throwing discus,kinetics-dataset/val/throwing discus/E31BW-MAtQg_000002_000012.mp4,E31BW-MAtQg,random-num,845,True
+cutting pineapple,cutting pineapple,kinetics-dataset/val/cutting pineapple/_qGGRGs1gmk_000004_000014.mp4,_qGGRGs1gmk,random-num,1024,True
+kitesurfing,kitesurfing,kinetics-dataset/val/kitesurfing/_VXQK6qQmrQ_000137_000147.mp4,_VXQK6qQmrQ,random-num,2614,True
+belly dancing,belly dancing,kinetics-dataset/val/belly dancing/8Ye63Vtt114_000099_000109.mp4,8Ye63Vtt114,random-num,3886,True
+tickling,waxing legs,kinetics-dataset/val/tickling/-i1c-6xhoWk_000000_000010.mp4,-i1c-6xhoWk,random-num,4756,False
+walking the dog,walking the dog,kinetics-dataset/val/walking the dog/klt-rafGwIc_000151_000161.mp4,klt-rafGwIc,random-num,3681,True
+bobsledding,motorcycling,kinetics-dataset/val/bobsledding/_yi2J3Y3st8_000004_000014.mp4,_yi2J3Y3st8,random-num,3374,False
+kicking soccer ball,bowling,kinetics-dataset/val/kicking soccer ball/Sz9T02FzLBc_000034_000044.mp4,Sz9T02FzLBc,random-num,1709,False
+making jewelry,opening bottle,kinetics-dataset/val/making jewelry/YAvhEr0J0K4_000702_000712.mp4,YAvhEr0J0K4,random-num,1636,False
+using segway,pushing car,kinetics-dataset/val/using segway/SOX5yA1l24A_000299_000309.mp4,SOX5yA1l24A,random-num,2596,False
+weaving basket,weaving basket,kinetics-dataset/val/weaving basket/oD0wHopSNLU_000000_000010.mp4,oD0wHopSNLU,random-num,5123,True
+baking cookies,throwing axe,kinetics-dataset/val/baking cookies/-514AQUrSow_000058_000068.mp4,-514AQUrSow,random-num,5581,False
+playing harmonica,carrying baby,kinetics-dataset/val/playing harmonica/aBtwsG79BnQ_000004_000014.mp4,aBtwsG79BnQ,random-num,2748,False
+jumpstyle dancing,making snowman,kinetics-dataset/val/jumpstyle dancing/FPbfgv79y98_000073_000083.mp4,FPbfgv79y98,random-num,2693,False
+crying,crying,kinetics-dataset/val/crying/eKzzadTZ7v4_000001_000011.mp4,eKzzadTZ7v4,random-num,3501,True
+playing organ,bending back,kinetics-dataset/val/playing organ/TN_QcKErOD8_000019_000029.mp4,TN_QcKErOD8,random-num,759,False
+hitting baseball,shooting basketball,kinetics-dataset/val/hitting baseball/3USSmzO001k_000058_000068.mp4,3USSmzO001k,random-num,5141,False
+playing clarinet,playing clarinet,kinetics-dataset/val/playing clarinet/7KtJqEQ_PVk_000196_000206.mp4,7KtJqEQ_PVk,random-num,4242,True
+hurling (sport),throwing ball,kinetics-dataset/val/hurling (sport)/mRG0t1BWXxU_000042_000052.mp4,mRG0t1BWXxU,random-num,6599,False
+waxing back,headbanging,kinetics-dataset/val/waxing back/YkpkTy5Xs3w_000043_000053.mp4,YkpkTy5Xs3w,random-num,6894,False
+answering questions,shaving head,kinetics-dataset/val/answering questions/5bGElGxGhbs_002934_002944.mp4,5bGElGxGhbs,random-num,4031,False
+washing hair,crying,kinetics-dataset/val/washing hair/khMaJTS1YgE_000017_000027.mp4,khMaJTS1YgE,random-num,3317,False
+windsurfing,windsurfing,kinetics-dataset/val/windsurfing/mdmkxX5z-fA_000060_000070.mp4,mdmkxX5z-fA,random-num,667,True
+pole vault,pole vault,kinetics-dataset/val/pole vault/-eq5-ZoYv4Y_000006_000016.mp4,-eq5-ZoYv4Y,random-num,1690,True
+reading book,testifying,kinetics-dataset/val/reading book/STS-nvgZWWM_000011_000021.mp4,STS-nvgZWWM,random-num,4695,False
+faceplanting,crawling baby,kinetics-dataset/val/faceplanting/-0ew-c0w7uc_000002_000012.mp4,-0ew-c0w7uc,random-num,1987,False
+massaging back,massaging back,kinetics-dataset/val/massaging back/GriF7tGZeuY_000509_000519.mp4,GriF7tGZeuY,random-num,287,True
+eating carrots,shaking head,kinetics-dataset/val/eating carrots/gYAO5IxnTa4_000022_000032.mp4,gYAO5IxnTa4,random-num,1653,False
+playing organ,playing organ,kinetics-dataset/val/playing organ/U6emWTjz4gE_000195_000205.mp4,U6emWTjz4gE,random-num,774,True
+hula hooping,folding clothes,kinetics-dataset/val/hula hooping/ghyrOj-64-I_000001_000011.mp4,ghyrOj-64-I,random-num,686,False
+sharpening pencil,sniffing,kinetics-dataset/val/sharpening pencil/JvY5s0Ap1f4_000013_000023.mp4,JvY5s0Ap1f4,random-num,1559,False
+playing cricket,playing cricket,kinetics-dataset/val/playing cricket/-J8NeF13oN0_000017_000027.mp4,-J8NeF13oN0,random-num,2076,True
+yoga,yoga,kinetics-dataset/val/yoga/-IeJ0CF3huY_000016_000026.mp4,-IeJ0CF3huY,random-num,5680,True
+blowing out candles,blowing out candles,kinetics-dataset/val/blowing out candles/VmdSMhng5y0_000059_000069.mp4,VmdSMhng5y0,random-num,6262,True
+cleaning floor,mopping floor,kinetics-dataset/val/cleaning floor/X_Acgnt-6z0_000008_000018.mp4,X_Acgnt-6z0,random-num,2322,False
+changing wheel,sharpening knives,kinetics-dataset/val/changing wheel/auHqPVQAz5E_000067_000077.mp4,auHqPVQAz5E,random-num,2499,False
+exercising arm,yoga,kinetics-dataset/val/exercising arm/6N0uPlyK8ak_000050_000060.mp4,6N0uPlyK8ak,random-num,5654,False
+stomping grapes,golf driving,kinetics-dataset/val/stomping grapes/Jps_ov3HZIY_000042_000052.mp4,Jps_ov3HZIY,random-num,2103,False
+milking cow,riding or walking with horse,kinetics-dataset/val/milking cow/Tm6IZIFxl8Q_000046_000056.mp4,Tm6IZIFxl8Q,random-num,1338,False
+massaging feet,washing feet,kinetics-dataset/val/massaging feet/F6AwAGEM-S0_000006_000016.mp4,F6AwAGEM-S0,random-num,5111,False
+abseiling,abseiling,kinetics-dataset/val/abseiling/O179fpfn1G4_000040_000050.mp4,O179fpfn1G4,random-num,964,True
+swing dancing,tango dancing,kinetics-dataset/val/swing dancing/3SFFYaz5czo_000025_000035.mp4,3SFFYaz5czo,random-num,191,False
+playing cymbals,playing cymbals,kinetics-dataset/val/playing cymbals/BHjh7yu7Lzo_000041_000051.mp4,BHjh7yu7Lzo,random-num,2191,True
+barbequing,pull ups,kinetics-dataset/val/barbequing/-43p5IQaY18_000383_000393.mp4,-43p5IQaY18,random-num,5781,False
+pumping fist,abseiling,kinetics-dataset/val/pumping fist/2KjgwQP_-Os_000004_000014.mp4,2KjgwQP_-Os,random-num,1916,False
+eating burger,eating burger,kinetics-dataset/val/eating burger/pSspxsM1a9g_000004_000014.mp4,pSspxsM1a9g,random-num,7037,True
+planting trees,playing paintball,kinetics-dataset/val/planting trees/NfpBY0Xbfqc_000019_000029.mp4,NfpBY0Xbfqc,random-num,6890,False
+cooking on campfire,cooking chicken,kinetics-dataset/val/cooking on campfire/pBaEJy6fgF4_000344_000354.mp4,pBaEJy6fgF4,random-num,1799,False
+reading book,reading book,kinetics-dataset/val/reading book/KurBYv9Hi6s_000028_000038.mp4,KurBYv9Hi6s,random-num,4701,True
+ski jumping,ski jumping,kinetics-dataset/val/ski jumping/T_DximV14OQ_000002_000012.mp4,T_DximV14OQ,random-num,1946,True
+eating doughnuts,pole vault,kinetics-dataset/val/eating doughnuts/TXCy_lgIeJQ_000158_000168.mp4,TXCy_lgIeJQ,random-num,458,False
+laughing,sticking tongue out,kinetics-dataset/val/laughing/bEN-M8LaxN4_000051_000061.mp4,bEN-M8LaxN4,random-num,106,False
+passing American football (in game),passing American football (in game),kinetics-dataset/val/passing American football (in game)/KlzJI2wQafk_000001_000011.mp4,KlzJI2wQafk,random-num,6545,True
+dodgeball,dodgeball,kinetics-dataset/val/dodgeball/Y2hg-xMRifw_000052_000062.mp4,Y2hg-xMRifw,random-num,5282,True
+springboard diving,springboard diving,kinetics-dataset/val/springboard diving/Glv-SLEJRpM_000002_000012.mp4,Glv-SLEJRpM,random-num,5059,True
+filling eyebrows,filling eyebrows,kinetics-dataset/val/filling eyebrows/Ru2Ua8flCvM_000058_000068.mp4,Ru2Ua8flCvM,random-num,2463,True
+yawning,headbanging,kinetics-dataset/val/yawning/iGn7dk9hxN8_000004_000014.mp4,iGn7dk9hxN8,random-num,2288,False
+riding a bike,riding a bike,kinetics-dataset/val/riding a bike/hR--iDJcjgU_000069_000079.mp4,hR--iDJcjgU,random-num,1121,True
+yoga,yoga,kinetics-dataset/val/yoga/-Gb1pbOE32g_000032_000042.mp4,-Gb1pbOE32g,random-num,5691,True
+playing xylophone,crawling baby,kinetics-dataset/val/playing xylophone/5LnRFlqlV6w_000001_000011.mp4,5LnRFlqlV6w,random-num,5299,False
+playing harmonica,playing harmonica,kinetics-dataset/val/playing harmonica/MdsKfut1Ugk_000020_000030.mp4,MdsKfut1Ugk,random-num,2751,True
+skiing crosscountry,skiing crosscountry,kinetics-dataset/val/skiing crosscountry/dlK5iFZwhT4_000372_000382.mp4,dlK5iFZwhT4,random-num,4913,True
+playing tennis,playing tennis,kinetics-dataset/val/playing tennis/GVK6q6VYAGs_000023_000033.mp4,GVK6q6VYAGs,random-num,5908,True
+playing harp,playing harp,kinetics-dataset/val/playing harp/YkGod1DOGsQ_000123_000133.mp4,YkGod1DOGsQ,random-num,3665,True
+tap dancing,air drumming,kinetics-dataset/val/tap dancing/9cFlNjI7nNg_000014_000024.mp4,9cFlNjI7nNg,random-num,1253,False
+singing,singing,kinetics-dataset/val/singing/FuHOkar7pYA_000026_000036.mp4,FuHOkar7pYA,random-num,5231,True
+folding clothes,waxing legs,kinetics-dataset/val/folding clothes/LVhzHoWaJiA_000000_000010.mp4,LVhzHoWaJiA,random-num,2242,False
+playing cello,playing cello,kinetics-dataset/val/playing cello/dHKHcgulsiM_000064_000074.mp4,dHKHcgulsiM,random-num,4552,True
+vault,pole vault,kinetics-dataset/val/vault/0_obbLl1Zyg_000035_000045.mp4,0_obbLl1Zyg,random-num,6822,False
+dining,dining,kinetics-dataset/val/dining/aCkhItBpSVo_000110_000120.mp4,aCkhItBpSVo,random-num,3546,True
+zumba,zumba,kinetics-dataset/val/zumba/RZeatwX9l0o_000248_000258.mp4,RZeatwX9l0o,random-num,1283,True
+changing oil,kissing,kinetics-dataset/val/changing oil/I_pWzPcKBBQ_000033_000043.mp4,I_pWzPcKBBQ,random-num,1348,False
+washing hair,washing dishes,kinetics-dataset/val/washing hair/Kh166-FNAOQ_000096_000106.mp4,Kh166-FNAOQ,random-num,3324,False
+barbequing,celebrating,kinetics-dataset/val/barbequing/hBvYu8rKfXk_000000_000010.mp4,hBvYu8rKfXk,random-num,5789,False
+bungee jumping,bungee jumping,kinetics-dataset/val/bungee jumping/pTe8T-HL1kw_000139_000149.mp4,pTe8T-HL1kw,random-num,7071,True
+shuffling cards,shuffling cards,kinetics-dataset/val/shuffling cards/cPQEiIvzGUs_000148_000158.mp4,cPQEiIvzGUs,random-num,991,True
+exercising arm,stretching leg,kinetics-dataset/val/exercising arm/J_ueNbvilvs_000005_000015.mp4,J_ueNbvilvs,random-num,5650,False
+cutting pineapple,cutting pineapple,kinetics-dataset/val/cutting pineapple/aoS_An3ltEI_000010_000020.mp4,aoS_An3ltEI,random-num,1025,True
+bending back,passing American football (not in game),kinetics-dataset/val/bending back/V59G2JApoeo_000008_000018.mp4,V59G2JApoeo,random-num,6387,False
+tickling,crying,kinetics-dataset/val/tickling/gpVfM7tax9c_000002_000012.mp4,gpVfM7tax9c,random-num,4754,False
+crying,washing feet,kinetics-dataset/val/crying/d4LtT0DR0w4_000020_000030.mp4,d4LtT0DR0w4,random-num,3510,False
+slapping,pushing cart,kinetics-dataset/val/slapping/_6PUxb47zJY_000000_000010.mp4,_6PUxb47zJY,random-num,2824,False
+drinking shots,playing poker,kinetics-dataset/val/drinking shots/5XydIroPDng_000000_000010.mp4,5XydIroPDng,random-num,1835,False
+abseiling,pole vault,kinetics-dataset/val/abseiling/BiKRPPjAzvw_000017_000027.mp4,BiKRPPjAzvw,random-num,953,False
+cheerleading,cheerleading,kinetics-dataset/val/cheerleading/RLYzsL-bk_Y_000004_000014.mp4,RLYzsL-bk_Y,random-num,4978,True
+peeling potatoes,cutting pineapple,kinetics-dataset/val/peeling potatoes/nKdqNcoYumU_000171_000181.mp4,nKdqNcoYumU,random-num,424,False
+swinging on something,swinging on something,kinetics-dataset/val/swinging on something/PqhEBVDdbcU_000004_000014.mp4,PqhEBVDdbcU,random-num,4255,True
+biking through snow,snowmobiling,kinetics-dataset/val/biking through snow/MOBC2AAtq8w_000000_000010.mp4,MOBC2AAtq8w,random-num,1584,False
+skiing slalom,skiing (not slalom or crosscountry),kinetics-dataset/val/skiing slalom/RvXnfumvBvQ_000412_000422.mp4,RvXnfumvBvQ,random-num,3575,False
+grooming dog,bookbinding,kinetics-dataset/val/grooming dog/paI7Ps-2j24_000058_000068.mp4,paI7Ps-2j24,random-num,1411,False
+catching or throwing baseball,cartwheeling,kinetics-dataset/val/catching or throwing baseball/WuEYX5XWCsw_000002_000012.mp4,WuEYX5XWCsw,random-num,6877,False
+windsurfing,sailing,kinetics-dataset/val/windsurfing/HmCUN62Nke0_000201_000211.mp4,HmCUN62Nke0,random-num,663,False
+taking a shower,dying hair,kinetics-dataset/val/taking a shower/N0S9XCbj20M_000149_000159.mp4,N0S9XCbj20M,random-num,940,False
+headbutting,riding unicycle,kinetics-dataset/val/headbutting/pSjc6_p2wD8_000003_000013.mp4,pSjc6_p2wD8,random-num,6422,False
+tying knot (not on a tie),tying knot (not on a tie),kinetics-dataset/val/tying knot (not on a tie)/OXWthvBAKAc_000037_000047.mp4,OXWthvBAKAc,random-num,2404,True
+playing didgeridoo,playing didgeridoo,kinetics-dataset/val/playing didgeridoo/MCvI6KaKpus_000145_000155.mp4,MCvI6KaKpus,random-num,16,True
+water skiing,kitesurfing,kinetics-dataset/val/water skiing/C6kWeTyMH5U_000003_000013.mp4,C6kWeTyMH5U,random-num,6635,False
+eating hotdog,eating burger,kinetics-dataset/val/eating hotdog/WAoaX7rXhFQ_000003_000013.mp4,WAoaX7rXhFQ,random-num,5336,False
+passing American football (in game),passing American football (in game),kinetics-dataset/val/passing American football (in game)/K8vBVVe_QSs_000000_000010.mp4,K8vBVVe_QSs,random-num,6540,True
+playing piano,playing piano,kinetics-dataset/val/playing piano/9o68AyEWzcM_000081_000091.mp4,9o68AyEWzcM,random-num,2583,True
+riding mule,riding mule,kinetics-dataset/val/riding mule/0x6wV-RDB4A_000017_000027.mp4,0x6wV-RDB4A,random-num,5507,True
+carving pumpkin,carving pumpkin,kinetics-dataset/val/carving pumpkin/H4lcLtTEb-E_000015_000025.mp4,H4lcLtTEb-E,random-num,5978,True
+arranging flowers,cutting watermelon,kinetics-dataset/val/arranging flowers/04jTKnOYrZw_000076_000086.mp4,04jTKnOYrZw,random-num,3293,False
+side kick,side kick,kinetics-dataset/val/side kick/OPjonSK9blk_000018_000028.mp4,OPjonSK9blk,random-num,3747,True
+playing paintball,archery,kinetics-dataset/val/playing paintball/fMSj1oCzsMo_000027_000037.mp4,fMSj1oCzsMo,random-num,4344,False
+water sliding,water sliding,kinetics-dataset/val/water sliding/_JcZ7Ry_9kg_000003_000013.mp4,_JcZ7Ry_9kg,random-num,6197,True
+dancing charleston,dancing charleston,kinetics-dataset/val/dancing charleston/Ax88fQ2PzKw_000028_000038.mp4,Ax88fQ2PzKw,random-num,6249,True
+making snowman,walking the dog,kinetics-dataset/val/making snowman/VWoXZnizmMI_000221_000231.mp4,VWoXZnizmMI,random-num,5943,False
+eating doughnuts,dancing macarena,kinetics-dataset/val/eating doughnuts/odzoy22fTfE_000002_000012.mp4,odzoy22fTfE,random-num,445,False
+cleaning gutters,cleaning gutters,kinetics-dataset/val/cleaning gutters/SxDRDEGz94I_000088_000098.mp4,SxDRDEGz94I,random-num,6847,True
+flipping pancake,mopping floor,kinetics-dataset/val/flipping pancake/lNz00plE8HE_000024_000034.mp4,lNz00plE8HE,random-num,5466,False
+changing oil,changing oil,kinetics-dataset/val/changing oil/PxpSsYOB4Yk_000029_000039.mp4,PxpSsYOB4Yk,random-num,1344,True
+abseiling,abseiling,kinetics-dataset/val/abseiling/3yaoNwz99xM_000062_000072.mp4,3yaoNwz99xM,random-num,962,True
+side kick,side kick,kinetics-dataset/val/side kick/mVk6WpXXPgU_000004_000014.mp4,mVk6WpXXPgU,random-num,3729,True
+eating chips,pumping fist,kinetics-dataset/val/eating chips/Sneg5fZKyVg_000011_000021.mp4,Sneg5fZKyVg,random-num,4565,False
+catching fish,catching fish,kinetics-dataset/val/catching fish/N1jdOhiJ84Q_000028_000038.mp4,N1jdOhiJ84Q,random-num,2732,True
+laughing,laughing,kinetics-dataset/val/laughing/R559estVW2Y_000026_000036.mp4,R559estVW2Y,random-num,103,True
+recording music,sniffing,kinetics-dataset/val/recording music/IRd-O2Ii1mU_000088_000098.mp4,IRd-O2Ii1mU,random-num,598,False
+reading book,getting a tattoo,kinetics-dataset/val/reading book/7HjvOjwNXus_000037_000047.mp4,7HjvOjwNXus,random-num,4700,False
+making a sandwich,making a cake,kinetics-dataset/val/making a sandwich/iSstKUu4Qs8_000023_000033.mp4,iSstKUu4Qs8,random-num,6121,False
+marching,marching,kinetics-dataset/val/marching/9Xc_Kf9gYQU_000451_000461.mp4,9Xc_Kf9gYQU,random-num,889,True
+playing organ,playing piano,kinetics-dataset/val/playing organ/PLdphyCuyTw_000034_000044.mp4,PLdphyCuyTw,random-num,764,False
+catching fish,catching fish,kinetics-dataset/val/catching fish/c5l0PZGQ2QU_000039_000049.mp4,c5l0PZGQ2QU,random-num,2726,True
+stomping grapes,washing feet,kinetics-dataset/val/stomping grapes/2I3GHwg0OOs_000049_000059.mp4,2I3GHwg0OOs,random-num,2107,False
+dodgeball,headbanging,kinetics-dataset/val/dodgeball/c-rx2sUfp50_000067_000077.mp4,c-rx2sUfp50,random-num,5264,False
+diving cliff,diving cliff,kinetics-dataset/val/diving cliff/OG6bNeYSyLM_000003_000013.mp4,OG6bNeYSyLM,random-num,703,True
+cooking egg,cooking egg,kinetics-dataset/val/cooking egg/GGpw5xawjEs_000111_000121.mp4,GGpw5xawjEs,random-num,5425,True
+bending back,gymnastics tumbling,kinetics-dataset/val/bending back/_zyHfkpeitg_000076_000086.mp4,_zyHfkpeitg,random-num,6399,False
+filling eyebrows,filling eyebrows,kinetics-dataset/val/filling eyebrows/hfaihsYylPY_000106_000116.mp4,hfaihsYylPY,random-num,2465,True
+cooking egg,cooking egg,kinetics-dataset/val/cooking egg/1koxtPz76MU_000041_000051.mp4,1koxtPz76MU,random-num,5436,True
+sneezing,crying,kinetics-dataset/val/sneezing/G_J5cATQRls_000165_000175.mp4,G_J5cATQRls,random-num,363,False
+skiing (not slalom or crosscountry),skiing (not slalom or crosscountry),kinetics-dataset/val/skiing (not slalom or crosscountry)/Z68IjuREXTI_000066_000076.mp4,Z68IjuREXTI,random-num,6452,True
+making pizza,making pizza,kinetics-dataset/val/making pizza/iEg1te0LBM0_000063_000073.mp4,iEg1te0LBM0,random-num,222,True
+biking through snow,biking through snow,kinetics-dataset/val/biking through snow/WRKPOnQZ5Mo_000010_000020.mp4,WRKPOnQZ5Mo,random-num,1592,True
+lunge,stretching arm,kinetics-dataset/val/lunge/4qS0q4M2b0w_000000_000010.mp4,4qS0q4M2b0w,random-num,4203,False
+gargling,dancing gangnam style,kinetics-dataset/val/gargling/lZTso1hS7Jw_000004_000014.mp4,lZTso1hS7Jw,random-num,4150,False
+cartwheeling,hurdling,kinetics-dataset/val/cartwheeling/-6CM7VV8-_w_000262_000272.mp4,-6CM7VV8-_w,random-num,5740,False
+shaking hands,giving or receiving award,kinetics-dataset/val/shaking hands/Ca054foMBZ4_000031_000041.mp4,Ca054foMBZ4,random-num,99,False
+zumba,dodgeball,kinetics-dataset/val/zumba/PyGsYFhOwsA_000032_000042.mp4,PyGsYFhOwsA,random-num,1282,False
+swing dancing,salsa dancing,kinetics-dataset/val/swing dancing/ImQrNf1CdhU_000081_000091.mp4,ImQrNf1CdhU,random-num,194,False
+cracking neck,dying hair,kinetics-dataset/val/cracking neck/92de7pl5SRw_000011_000021.mp4,92de7pl5SRw,random-num,5460,False
+playing chess,dancing gangnam style,kinetics-dataset/val/playing chess/TdxmFKr3gAk_000809_000819.mp4,TdxmFKr3gAk,random-num,6100,False
+playing trombone,playing trombone,kinetics-dataset/val/playing trombone/V821ET9kM3I_000030_000040.mp4,V821ET9kM3I,random-num,4319,True
+golf driving,golf driving,kinetics-dataset/val/golf driving/IKonv-whHXo_000001_000011.mp4,IKonv-whHXo,random-num,1106,True
+golf putting,golf putting,kinetics-dataset/val/golf putting/72IUfeBD2lY_000039_000049.mp4,72IUfeBD2lY,random-num,2556,True
+skipping rope,punching person (boxing),kinetics-dataset/val/skipping rope/N3o3Rg0kKMw_000015_000025.mp4,N3o3Rg0kKMw,random-num,7167,False
+exercising with an exercise ball,yoga,kinetics-dataset/val/exercising with an exercise ball/AtoipJ3SZkc_001246_001256.mp4,AtoipJ3SZkc,random-num,1032,False
+somersaulting,somersaulting,kinetics-dataset/val/somersaulting/XPQ8YkMLpJ4_000000_000010.mp4,XPQ8YkMLpJ4,random-num,3432,True
+folding clothes,carrying baby,kinetics-dataset/val/folding clothes/-DLirh796uw_000039_000049.mp4,-DLirh796uw,random-num,2253,False
+marching,marching,kinetics-dataset/val/marching/AYslYdNVsMU_000272_000282.mp4,AYslYdNVsMU,random-num,894,True
+parasailing,parasailing,kinetics-dataset/val/parasailing/VV1Wr_C98WU_000091_000101.mp4,VV1Wr_C98WU,random-num,3178,True
+playing basketball,dunking basketball,kinetics-dataset/val/playing basketball/sEN_lFB9QGk_000009_000019.mp4,sEN_lFB9QGk,random-num,808,False
+cooking on campfire,contact juggling,kinetics-dataset/val/cooking on campfire/Er2f_HVtEc8_000021_000031.mp4,Er2f_HVtEc8,random-num,1785,False
+balloon blowing,balloon blowing,kinetics-dataset/val/balloon blowing/QQJ7gU1Ggn4_000037_000047.mp4,QQJ7gU1Ggn4,random-num,1964,True
+getting a tattoo,waxing legs,kinetics-dataset/val/getting a tattoo/XFAgYyqz2cY_000008_000018.mp4,XFAgYyqz2cY,random-num,1618,False
+eating burger,wrapping present,kinetics-dataset/val/eating burger/bbFcB6NoRr4_000458_000468.mp4,bbFcB6NoRr4,random-num,7038,False
+brushing teeth,brushing teeth,kinetics-dataset/val/brushing teeth/5G-5aOnyDwo_000016_000026.mp4,5G-5aOnyDwo,random-num,1854,True
+digging,digging,kinetics-dataset/val/digging/QKs2zgQuNjo_000396_000406.mp4,QKs2zgQuNjo,random-num,796,True
+filling eyebrows,filling eyebrows,kinetics-dataset/val/filling eyebrows/bHXSPD6b_Hg_000101_000111.mp4,bHXSPD6b_Hg,random-num,2469,True
+cutting pineapple,cutting pineapple,kinetics-dataset/val/cutting pineapple/MVZyqOVG6kw_000027_000037.mp4,MVZyqOVG6kw,random-num,1027,True
+playing cello,playing cello,kinetics-dataset/val/playing cello/knBqdxqH3O8_000075_000085.mp4,knBqdxqH3O8,random-num,4546,True
+parasailing,parasailing,kinetics-dataset/val/parasailing/FDBb26Q7Jz8_000007_000017.mp4,FDBb26Q7Jz8,random-num,3192,True
+chopping wood,chopping wood,kinetics-dataset/val/chopping wood/pmH650EmzaI_000004_000014.mp4,pmH650EmzaI,random-num,1142,True
+playing xylophone,playing xylophone,kinetics-dataset/val/playing xylophone/cfK4FnaOeSo_000010_000020.mp4,cfK4FnaOeSo,random-num,5308,True
+hula hooping,brushing hair,kinetics-dataset/val/hula hooping/0GCBMmyqa7Q_000002_000012.mp4,0GCBMmyqa7Q,random-num,677,False
+walking the dog,walking the dog,kinetics-dataset/val/walking the dog/YNdkvXWaryY_000318_000328.mp4,YNdkvXWaryY,random-num,3674,True
+assembling computer,assembling computer,kinetics-dataset/val/assembling computer/-C6BDDvJO4A_000045_000055.mp4,-C6BDDvJO4A,random-num,3992,True
+shaving legs,cleaning shoes,kinetics-dataset/val/shaving legs/9n_NaKdXBMI_000044_000054.mp4,9n_NaKdXBMI,random-num,26,False
+playing bass guitar,playing bass guitar,kinetics-dataset/val/playing bass guitar/U3HzxozvdCo_000204_000214.mp4,U3HzxozvdCo,random-num,1464,True
+sharpening pencil,bench pressing,kinetics-dataset/val/sharpening pencil/eG4cnkg68q0_000009_000019.mp4,eG4cnkg68q0,random-num,1544,False
+crossing river,pushing car,kinetics-dataset/val/crossing river/EJqF_I2pu0o_000025_000035.mp4,EJqF_I2pu0o,random-num,6667,False
+garbage collecting,feeding birds,kinetics-dataset/val/garbage collecting/nq5_A70nB3o_000282_000292.mp4,nq5_A70nB3o,random-num,5195,False
+golf putting,golf putting,kinetics-dataset/val/golf putting/6c_TfGwWVlQ_000033_000043.mp4,6c_TfGwWVlQ,random-num,2550,True
+washing hair,washing hair,kinetics-dataset/val/washing hair/8byoM35K6xE_000018_000028.mp4,8byoM35K6xE,random-num,3318,True
+robot dancing,waxing legs,kinetics-dataset/val/robot dancing/8Tr9NpoF32A_000008_000018.mp4,8Tr9NpoF32A,random-num,6939,False
+writing,drawing,kinetics-dataset/val/writing/5bZojQCp5tk_000318_000328.mp4,5bZojQCp5tk,random-num,778,False
+climbing tree,climbing tree,kinetics-dataset/val/climbing tree/A5b9rKmPls4_000008_000018.mp4,A5b9rKmPls4,random-num,6787,True
+presenting weather forecast,news anchoring,kinetics-dataset/val/presenting weather forecast/JIQKjf85mV0_000081_000091.mp4,JIQKjf85mV0,random-num,2428,False
+pole vault,climbing a rope,kinetics-dataset/val/pole vault/466hpto6Phw_000028_000038.mp4,466hpto6Phw,random-num,1695,False
+cleaning toilet,taking a shower,kinetics-dataset/val/cleaning toilet/7OLRCXHiZpA_000079_000089.mp4,7OLRCXHiZpA,random-num,2985,False
+massaging feet,shining shoes,kinetics-dataset/val/massaging feet/laIZKonIJJ8_000135_000145.mp4,laIZKonIJJ8,random-num,5102,False
+bookbinding,bookbinding,kinetics-dataset/val/bookbinding/PenwKrUxZto_000167_000177.mp4,PenwKrUxZto,random-num,2443,True
+breakdancing,dancing gangnam style,kinetics-dataset/val/breakdancing/jPxfAfaxzug_000004_000014.mp4,jPxfAfaxzug,random-num,1178,False
+playing flute,playing trombone,kinetics-dataset/val/playing flute/67vhJRyiwmI_000328_000338.mp4,67vhJRyiwmI,random-num,5541,False
+shaving legs,rock climbing,kinetics-dataset/val/shaving legs/YOUl_4JqvgY_000047_000057.mp4,YOUl_4JqvgY,random-num,39,False
+extinguishing fire,extinguishing fire,kinetics-dataset/val/extinguishing fire/pjJ0mvrzrgI_000012_000022.mp4,pjJ0mvrzrgI,random-num,2262,True
+eating ice cream,eating doughnuts,kinetics-dataset/val/eating ice cream/JFQCLRag-CU_000029_000039.mp4,JFQCLRag-CU,random-num,506,False
+blowing nose,playing harmonica,kinetics-dataset/val/blowing nose/1Hi5GMotrjs_000002_000012.mp4,1Hi5GMotrjs,random-num,7196,False
+parasailing,parasailing,kinetics-dataset/val/parasailing/WozCg9IEnoY_000054_000064.mp4,WozCg9IEnoY,random-num,3174,True
+shooting basketball,dunking basketball,kinetics-dataset/val/shooting basketball/jnTuUuETpSs_000002_000012.mp4,jnTuUuETpSs,random-num,3057,False
+rock climbing,rock climbing,kinetics-dataset/val/rock climbing/CQ1_ovjb-Ho_000258_000268.mp4,CQ1_ovjb-Ho,random-num,6025,True
+cleaning floor,shearing sheep,kinetics-dataset/val/cleaning floor/NsMCAbejmus_000001_000011.mp4,NsMCAbejmus,random-num,2314,False
+swimming breast stroke,swimming butterfly stroke,kinetics-dataset/val/swimming breast stroke/Wy_qVDWCLAc_000029_000039.mp4,Wy_qVDWCLAc,random-num,3243,False
+picking fruit,picking fruit,kinetics-dataset/val/picking fruit/ltqrofmGUPQ_000036_000046.mp4,ltqrofmGUPQ,random-num,6856,True
+playing accordion,playing accordion,kinetics-dataset/val/playing accordion/0yyodmE6cGg_000463_000473.mp4,0yyodmE6cGg,random-num,3788,True
+water skiing,trimming trees,kinetics-dataset/val/water skiing/50PBz_xf8UI_000003_000013.mp4,50PBz_xf8UI,random-num,6637,False
+playing basketball,throwing ball,kinetics-dataset/val/playing basketball/l3Bx9TtjNKE_000003_000013.mp4,l3Bx9TtjNKE,random-num,814,False
+headbanging,dancing ballet,kinetics-dataset/val/headbanging/7Eo8Rl95Q_M_000028_000038.mp4,7Eo8Rl95Q_M,random-num,545,False
+playing ice hockey,playing ice hockey,kinetics-dataset/val/playing ice hockey/48eBlzbR0n8_000004_000014.mp4,48eBlzbR0n8,random-num,4732,True
+breading or breadcrumbing,peeling potatoes,kinetics-dataset/val/breading or breadcrumbing/Rpl3P6Qg4tI_000162_000172.mp4,Rpl3P6Qg4tI,random-num,3844,False
+shooting goal (soccer),kicking soccer ball,kinetics-dataset/val/shooting goal (soccer)/2bA0vJGml6Q_000005_000015.mp4,2bA0vJGml6Q,random-num,1731,False
+shaking hands,washing feet,kinetics-dataset/val/shaking hands/Ascc4Z14FTs_000018_000028.mp4,Ascc4Z14FTs,random-num,82,False
+cartwheeling,jumpstyle dancing,kinetics-dataset/val/cartwheeling/EiZvgwrHCMk_000000_000010.mp4,EiZvgwrHCMk,random-num,5741,False
+unloading truck,unloading truck,kinetics-dataset/val/unloading truck/J68SA9rWKHg_000000_000010.mp4,J68SA9rWKHg,random-num,5992,True
+bartending,juggling fire,kinetics-dataset/val/bartending/rkPjfFC3NOo_000083_000093.mp4,rkPjfFC3NOo,random-num,4335,False
+shot put,shot put,kinetics-dataset/val/shot put/plQ9MDbMmS8_000005_000015.mp4,plQ9MDbMmS8,random-num,573,True
+strumming guitar,strumming guitar,kinetics-dataset/val/strumming guitar/gbkc1a6cAro_000116_000126.mp4,gbkc1a6cAro,random-num,6153,True
+kissing,kissing,kinetics-dataset/val/kissing/Cp-4GiYBQfQ_000005_000015.mp4,Cp-4GiYBQfQ,random-num,4481,True
+ice skating,ice skating,kinetics-dataset/val/ice skating/9HC_JtamTMk_000018_000028.mp4,9HC_JtamTMk,random-num,5099,True
+surfing water,catching fish,kinetics-dataset/val/surfing water/FMfkibqFapo_000077_000087.mp4,FMfkibqFapo,random-num,2791,False
+ripping paper,shaking head,kinetics-dataset/val/ripping paper/9G96P05y77A_000011_000021.mp4,9G96P05y77A,random-num,5855,False
+knitting,knitting,kinetics-dataset/val/knitting/NUynCoUgj9g_000123_000133.mp4,NUynCoUgj9g,random-num,127,True
+tossing coin,jumpstyle dancing,kinetics-dataset/val/tossing coin/BBfk5SMBZPE_000023_000033.mp4,BBfk5SMBZPE,random-num,1466,False
+extinguishing fire,recording music,kinetics-dataset/val/extinguishing fire/olzCI69Xcrg_000000_000010.mp4,olzCI69Xcrg,random-num,2274,False
+tying knot (not on a tie),tying knot (not on a tie),kinetics-dataset/val/tying knot (not on a tie)/_Gmc65XeyNI_000004_000014.mp4,_Gmc65XeyNI,random-num,2408,True
+driving tractor,driving tractor,kinetics-dataset/val/driving tractor/OFN2Wy-oueA_000024_000034.mp4,OFN2Wy-oueA,random-num,4990,True
+robot dancing,shaking hands,kinetics-dataset/val/robot dancing/Akmi0vc_LBo_000012_000022.mp4,Akmi0vc_LBo,random-num,6930,False
+playing basketball,dodgeball,kinetics-dataset/val/playing basketball/qAjMFoo7N2s_000004_000014.mp4,qAjMFoo7N2s,random-num,818,False
+shaving legs,shaving legs,kinetics-dataset/val/shaving legs/WZuGgvcl_PY_000067_000077.mp4,WZuGgvcl_PY,random-num,19,True
+stretching arm,stretching arm,kinetics-dataset/val/stretching arm/S3AbmQB47JE_000003_000013.mp4,S3AbmQB47JE,random-num,337,True
+strumming guitar,strumming guitar,kinetics-dataset/val/strumming guitar/KBq2M8VjK4I_000282_000292.mp4,KBq2M8VjK4I,random-num,6141,True
+springboard diving,springboard diving,kinetics-dataset/val/springboard diving/ZpYNqEbzJec_000002_000012.mp4,ZpYNqEbzJec,random-num,5064,True
+washing hair,braiding hair,kinetics-dataset/val/washing hair/-cleEWMMugo_000164_000174.mp4,-cleEWMMugo,random-num,3326,False
+texting,dancing ballet,kinetics-dataset/val/texting/iOCNJDV2Tsk_000034_000044.mp4,iOCNJDV2Tsk,random-num,5640,False
+sign language interpreting,sign language interpreting,kinetics-dataset/val/sign language interpreting/GTiGQtH8bdI_000086_000096.mp4,GTiGQtH8bdI,random-num,4925,True
+making tea,using computer,kinetics-dataset/val/making tea/4d1eTI-HvT4_000006_000016.mp4,4d1eTI-HvT4,random-num,640,False
+tickling,throwing ball,kinetics-dataset/val/tickling/Zm3BQu7eJUI_000002_000012.mp4,Zm3BQu7eJUI,random-num,4769,False
+robot dancing,mopping floor,kinetics-dataset/val/robot dancing/fPhwWijgOtI_000003_000013.mp4,fPhwWijgOtI,random-num,6942,False
+riding mechanical bull,riding mechanical bull,kinetics-dataset/val/riding mechanical bull/6upiCskGTX8_000000_000010.mp4,6upiCskGTX8,random-num,2946,True
+baby waking up,laughing,kinetics-dataset/val/baby waking up/W2MMCDoVqFY_000018_000028.mp4,W2MMCDoVqFY,random-num,6468,False
+cleaning floor,crawling baby,kinetics-dataset/val/cleaning floor/9ZCmwDE3_nE_000000_000010.mp4,9ZCmwDE3_nE,random-num,2317,False
