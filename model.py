@@ -36,6 +36,19 @@ class VideoMAEModel():
 
       return predicted_labels
     
+    def batch_predict_no_tqdm(self, dataset, batch_size = 10):
+      dataloader = DataLoader(dataset, sampler=SequentialSampler(dataset), batch_size=batch_size)
+      predicted_labels = torch.empty(0, dtype = torch.int8).to(self.device)
+
+      for batch in dataloader:
+        with torch.no_grad():
+          outputs = self.model(batch[0])
+          logits = outputs.logits
+        preds = torch.argmax(logits, dim = 1)
+        predicted_labels = torch.cat((predicted_labels, preds))
+
+      return predicted_labels
+    
     # Return a list of preprocessed frames for each different obj-detection sampling strategy
     def preprocess_videos_all(self, indices, video_paths, sampling_strategy, NUM_SAMPLING_STRATS, num_frames=16, frame_rate=1):
       inputs = [[] for i in range(NUM_SAMPLING_STRATS)]

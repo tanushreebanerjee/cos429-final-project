@@ -3,6 +3,7 @@ import numpy as np
 import cv2 as cv
 import time 
 import pickle
+import pandas as pd
 
 def get_frames_from_container(container, indices, format_type="rgb24"):
   '''
@@ -57,3 +58,7 @@ def get_flow_from_frames(frames):
     flow = np.linalg.norm(cv.calcOpticalFlowFarneback(frames[i], frames[i + 1], None, 0.5, 3, 15, 3, 5, 1.2, 0))
     flow_values.append(flow)
   return flow_values
+
+def get_missclassified(path):
+  df_1 = pd.read_csv(path)
+  return df_1[df_1["Correct"] == False]["Video Index"].to_list()

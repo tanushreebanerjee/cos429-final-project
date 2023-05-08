@@ -3,11 +3,12 @@ from clip_sampler import get_frames_from_video_path
 from tqdm import trange, tqdm
 import torch
 import warnings
+import gc
 import numpy as np
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import pandas as pd
 from torch.utils.data import TensorDataset, SequentialSampler, DataLoader
-from utils import load_pickle_file
+from utils import load_pickle_file, get_missclassified
 
 def run_experiment_all(model, sampling_strategy, video_paths, batch_size = 10, outer_batch_size = 100, num_examples=100, num_frames=16, frame_rate = 1, seed=10):
   print("run experiment")
@@ -72,66 +73,66 @@ def run_experiment_all(model, sampling_strategy, video_paths, batch_size = 10, o
     
 
 
-def run_theoretical_best(model, sampling_strategy, video_paths, batch_size = 10, outer_batch_size = 100, num_examples=100, num_frames=16, frame_rate = 1, seed=10):
-  print("run experiment")
-  random.seed(seed)
-  all_indices = random.sample(range(0, len(video_paths)), num_examples)
-  new_dataset = TensorDataset(torch.IntTensor(all_indices))
-  dataloader = DataLoader(new_dataset, sampler=SequentialSampler(new_dataset), batch_size=outer_batch_size)
-  
+def run_theoretical_best(model, sampling_strategy, video_paths, indices, batch_size = 10, outer_batch_size = 100, num_examples=100, num_frames=16, frame_rate = 1, seed=10):
+    print("run experiment")
+    random.seed(seed)
+    # all_indices = random.sample(range(0, len(video_paths)), num_examples)
+    all_indices = range(len(video_paths))
+    
+    num_correct = 0
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    
+        
+    master_predicted_labels = []
+    master_actual_labels = []
+    master_correct_frames = []
 
-  num_correct = 0
-  device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-  
-      
-  master_predicted_labels = []
-  master_actual_labels = []
-  master_correct_frames = []
-
-  j = 0
-  for batch in dataloader:
-    print("Iteration " + str(j) + ":")
     torch.cuda.empty_cache()
-    indices = batch[0].numpy()
-    model_inputs, video_frame_idxs = model.preprocess_all_frames(indices, video_paths)
-    actual_labels = [video_paths[x].parent.name for x in indices]
-    master_actual_labels = np.concatenate((master_actual_labels,actual_labels),axis=0)
-    for i in range(len(model_inputs)):
-        video_processed_frames = model_inputs[i]
-        correct_frames = []
-        dataset = TensorDataset(torch.stack(video_processed_frames).to(device))
-        prediction_ids = model.batch_predict(dataset, batch_size).cpu()
-        predicted_labels = [model.model.config.id2label[pred_id.item()] for pred_id in prediction_ids]
-        for frame_label_index in range(len(predicted_labels)):
-            frame_label = predicted_labels[frame_label_index]
-            if frame_label == actual_labels[i]:
-                correct_frames.append(video_frame_idxs[i][frame_label_index])
+    
+    new_dataset = TensorDataset(torch.IntTensor(indices))
+    dataloader = DataLoader(new_dataset, sampler=SequentialSampler(new_dataset), batch_size=outer_batch_size)
+  
+    
+    for batch in tqdm(dataloader, desc="Evaluating"):
+        torch.cuda.empty_cache()
+        sub_indices = batch[0].numpy()
+        model_inputs, video_frame_idxs = model.preprocess_all_frames(sub_indices, video_paths)
+        actual_labels = [video_paths[x].parent.name for x in sub_indices]
+        master_actual_labels = np.concatenate((master_actual_labels,actual_labels),axis=0)
+        for i in range(len(model_inputs)):
+            video_processed_frames = model_inputs[i]
+            correct_frames = []
+            dataset = TensorDataset(torch.stack(video_processed_frames).to(device))
+            prediction_ids = model.batch_predict_no_tqdm(dataset, batch_size).cpu()
+            predicted_labels = [model.model.config.id2label[pred_id.item()] for pred_id in prediction_ids]
+            for frame_label_index in range(len(predicted_labels)):
+                frame_label = predicted_labels[frame_label_index]
+                if frame_label == actual_labels[i]:
+                    correct_frames.append(video_frame_idxs[i][frame_label_index])
+                    master_predicted_labels = np.append(master_predicted_labels,frame_label)
+                    break
+            if len(correct_frames) == 0:
+                # add the most recent predicted label
                 master_predicted_labels = np.append(master_predicted_labels,frame_label)
-                break
-        if len(correct_frames) == 0:
-            # add the most recent predicted label
-            master_predicted_labels = np.append(master_predicted_labels,frame_label)
-                
-        master_correct_frames.append(correct_frames)
+                    
+            master_correct_frames.append(correct_frames)
             
-    j = j + 1
-
+    print(master_correct_frames)
     video_paths_arr = []
     video_ids_arr = []
     video_index_arr = []
     sampling_strategies = [sampling_strategy] * len(all_indices)
-    for i in all_indices:
+    for i in indices:
         video_path = video_paths[i]
         video_paths_arr.append(video_path)
         video_ids_arr.append(str(video_path.stem)[:11])
         video_index_arr.append(i)
 
-    df = pd.DataFrame(list(zip(master_actual_labels, master_predicted_labels, video_paths_arr, video_ids_arr, sampling_strategies, video_index_arr)),
+    df = pd.DataFrame(list(zip(master_actual_labels, master_predicted_labels, video_paths_arr, video_ids_arr, sampling_strategies, video_index_arr, master_correct_frames)),
                 columns =["Actual Label", "Predicted Label", "Video Path", 
-                            "Video ID", "Sampling Strategy", "Video Index"])
+                            "Video ID", "Sampling Strategy", "Video Index", "First Correct Frame"])
     
     df["Correct"] = df["Actual Label"] == df["Predicted Label"]
-    df["First Correct Frame"] = master_correct_frames
 
     accuracy = sum(df["Correct"]) / len(df)
     print(f"Accuracy: " + str(accuracy))

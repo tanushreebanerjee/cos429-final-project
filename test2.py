@@ -19,6 +19,6 @@ with open('data/kinetics400/validate/validate.json') as f:
     annotations_dict = json.load(f)
 
 model = VideoMAEModel()  
+indices = np.array(get_missclassified("outputs/random-num-20-250-1.csv"))
 
-indices = np.array(get_missclassified("outputs/random-num-10-250-1.csv"))
-run_theoretical_best(model, "theoretical-best", video_paths, indices, seed = 10, num_frames=16, num_examples = 250, outer_batch_size = 20, batch_size = 25)
+run_theoretical_best(model, "theoretical-best2", video_paths, indices, seed = 10, num_frames=16, num_examples = 250, outer_batch_size = 20, batch_size = 25)
