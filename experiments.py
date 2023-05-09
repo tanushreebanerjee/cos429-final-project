@@ -10,9 +10,10 @@ from torch.utils.data import TensorDataset, SequentialSampler, DataLoader
 from utils import load_pickle_file
 
 def run_experiment(model, sampling_strategy, video_paths, batch_size = 10, outer_batch_size = 100, num_examples=100, num_frames=16, frame_rate = 1, seed=10):
-  print("run experiment")
+  print("RUN experiment")
   random.seed(seed)
   all_indices = random.sample(range(0, len(video_paths)), num_examples)
+  print(all_indices)
   new_dataset = TensorDataset(torch.IntTensor(all_indices))
   dataloader = DataLoader(new_dataset, sampler=SequentialSampler(new_dataset), batch_size=outer_batch_size)
   

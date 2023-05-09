@@ -1,0 +1,21 @@
+Actual Label,Predicted Label,Video Path,Video ID,Sampling Strategy,Video Index,Correct
+sword fighting,drop kicking,kinetics-dataset/val/sword fighting/WGztQjJ0aMU_000010_000020.mp4,WGztQjJ0aMU,position_mixed_3,4680,False
+grooming horse,grooming horse,kinetics-dataset/val/grooming horse/1RYKyKAYZOQ_000096_000106.mp4,1RYKyKAYZOQ,position_mixed_3,266,True
+crying,crying,kinetics-dataset/val/crying/IfFZalicJ_U_000001_000011.mp4,IfFZalicJ_U,position_mixed_3,3513,True
+spraying,cleaning floor,kinetics-dataset/val/spraying/NPYa_aJXLyk_000435_000445.mp4,NPYa_aJXLyk,position_mixed_3,3953,False
+playing ice hockey,playing ice hockey,kinetics-dataset/val/playing ice hockey/7D4VHpfoPak_000053_000063.mp4,7D4VHpfoPak,position_mixed_3,4735,True
+knitting,knitting,kinetics-dataset/val/knitting/-neqpygEoXs_000026_000036.mp4,-neqpygEoXs,position_mixed_3,121,True
+pole vault,pole vault,kinetics-dataset/val/pole vault/KmCTA-KaEJw_000037_000047.mp4,KmCTA-KaEJw,position_mixed_3,1688,True
+playing accordion,playing accordion,kinetics-dataset/val/playing accordion/fK4kD8fXswE_000037_000047.mp4,fK4kD8fXswE,position_mixed_3,3789,True
+crossing river,crossing river,kinetics-dataset/val/crossing river/luTkBLIT6lU_000036_000046.mp4,luTkBLIT6lU,position_mixed_3,6662,True
+peeling apples,peeling apples,kinetics-dataset/val/peeling apples/64YG9guik-A_000003_000013.mp4,64YG9guik-A,position_mixed_3,4024,True
+reading newspaper,reading newspaper,kinetics-dataset/val/reading newspaper/Dvomn3IAnmk_000041_000051.mp4,Dvomn3IAnmk,position_mixed_3,6746,True
+extinguishing fire,extinguishing fire,kinetics-dataset/val/extinguishing fire/bPNxHAVD7tY_000004_000014.mp4,bPNxHAVD7tY,position_mixed_3,2273,True
+tying bow tie,tying bow tie,kinetics-dataset/val/tying bow tie/Rqn7ujRjVGc_000126_000136.mp4,Rqn7ujRjVGc,position_mixed_3,5353,True
+water skiing,water skiing,kinetics-dataset/val/water skiing/OzLBFd5xw-w_000095_000105.mp4,OzLBFd5xw-w,position_mixed_3,6640,True
+wrapping present,wrapping present,kinetics-dataset/val/wrapping present/U-u7LF8VEiQ_000016_000026.mp4,U-u7LF8VEiQ,position_mixed_3,1312,True
+massaging back,massaging back,kinetics-dataset/val/massaging back/3sUEgt5XT2s_000099_000109.mp4,3sUEgt5XT2s,position_mixed_3,281,True
+swinging on something,swinging on something,kinetics-dataset/val/swinging on something/6yNJjyoC22c_000140_000150.mp4,6yNJjyoC22c,position_mixed_3,4265,True
+peeling apples,peeling apples,kinetics-dataset/val/peeling apples/8qEAQXckcVw_000003_000013.mp4,8qEAQXckcVw,position_mixed_3,4014,True
+opening present,opening present,kinetics-dataset/val/opening present/KKFHlgwXljM_000011_000021.mp4,KKFHlgwXljM,position_mixed_3,2685,True
+shredding paper,folding paper,kinetics-dataset/val/shredding paper/NKbjNJf6u1o_000061_000071.mp4,NKbjNJf6u1o,position_mixed_3,623,False

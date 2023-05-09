@@ -26,6 +26,8 @@ def run_experiment_all(model, sampling_strategy, video_paths, batch_size = 10, o
   elif sampling_strategy == "position-all":
     #   SAMPLING_STRATS = ["position-fourths","position_beginning","position_middle","position_end","position-mixed"]
       SAMPLING_STRATS = ["position_beginning","position_middle","position_end"]
+  elif sampling_strategy == "position-mixed-all":
+      SAMPLING_STRATS = ["position_mixed_5","position_mixed_3","position_mixed_1"]
   else:
       SAMPLING_STRATS = [sampling_strategy]
       
