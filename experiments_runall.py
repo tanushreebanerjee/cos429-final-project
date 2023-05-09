@@ -39,7 +39,7 @@ def run_experiment_all(model, sampling_strategy, video_paths, batch_size = 10, o
     print("Iteration " + str(j) + ":")
     torch.cuda.empty_cache()
     indices = batch[0].numpy()
-    model_inputs = model.preprocess_videos_all(indices, video_paths, sampling_strategy, len(SAMPLING_STRATS), num_frames, frame_rate)
+    model_inputs, video_frame_indices = model.preprocess_videos_all(indices, video_paths, sampling_strategy, len(SAMPLING_STRATS), num_frames, frame_rate)
     for i in range(len(model_inputs)):
         sampling_model_inputs = model_inputs[i]
         dataset = TensorDataset(torch.stack([x for x in sampling_model_inputs]).to(device))

@@ -28,31 +28,38 @@ def sample_obj_detection(frame_type, images, num_frames):
                 num_objects += 1
         num_objects_list[i] = num_objects
     frames = []
+    frame_indices = []
     if frame_type == "obj-detection-top16" or frame_type == "obj-detection-all":
         indices = np.sort(np.argpartition(num_objects_list, -16)[-16:])
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "obj-detection-low16" or frame_type == "obj-detection-all":
         indices = np.sort(np.argpartition(num_objects_list, 16)[:16])
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "obj-detection-top8" or frame_type == "obj-detection-all":
         indices = np.argpartition(num_objects_list, -8)[-8:]
         indices = np.sort(np.repeat(indices, 2))
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "obj-detection-top4" or frame_type == "obj-detection-all":
         indices = np.argpartition(num_objects_list, -4)[-4:]
         indices = np.sort(np.repeat(indices, 4))
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "obj-detection-top1" or frame_type == "obj-detection-all":
         indices = np.argmax(num_objects_list)
         indices = np.repeat(indices, 16)
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "obj-detection-mixed" or frame_type == "obj-detection-all":
         top = np.argpartition(num_objects_list, -8)[-8:]
         low = np.argpartition(num_objects_list, 8)[:8]
         indices = np.concatenate((top,low)) 
         indices = np.sort(indices)
         frames.append(images[indices])
-    return frames
+        frame_indices.append(indices)
+    return frames, frame_indices
   
   
 
@@ -68,10 +75,12 @@ def sample_fourths(num_frames, frame_sample_rate, seg_len):
 
 def sample_positions(frame_type, images, num_frames, seg_len):
     frames = []
+    frame_indices = []
     if frame_type == "position-fourths" or frame_type == "position-all":
         indices = sample_fourths(num_frames, 1, seg_len)
         indices.sort()
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "position_beginning" or frame_type == "position-all":
         vals = range(int(seg_len/3))
         if len(vals) < num_frames:
@@ -81,6 +90,7 @@ def sample_positions(frame_type, images, num_frames, seg_len):
         indices = np.repeat(indices, 16 // num_frames)
         indices.sort()
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "position_middle" or frame_type == "position-all":
         vals = range(int(seg_len/3), int(2*seg_len/3))
         if len(vals) < num_frames:
@@ -91,6 +101,7 @@ def sample_positions(frame_type, images, num_frames, seg_len):
         indices = np.repeat(indices, 16 // num_frames)
         indices.sort()
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "position_end" or frame_type == "position-all":
         vals = range(int(2*seg_len/3), seg_len)
         if len(vals) < num_frames:
@@ -100,11 +111,13 @@ def sample_positions(frame_type, images, num_frames, seg_len):
         indices = np.repeat(indices, 16 // num_frames)
         indices.sort()
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "position-mixed" or frame_type == "position-all":
         indices = [0]
         indices += random.sample(range(1, int(seg_len/3)), 5) + random.sample(range(int(seg_len/3), int(2*seg_len/3)), 5) + random.sample(range(int(2*seg_len/3), seg_len), 5)
         indices.sort()
         frames.append(images[indices])
+        frame_indices.append(indices)
     if frame_type == "position-mixed-all":
         for num, repeat in [(5,1),(2,2),(1,4)]:
             indices = [0]
@@ -117,8 +130,9 @@ def sample_positions(frame_type, images, num_frames, seg_len):
             indices = np.repeat(indices, repeat)
             indices.sort()
             frames.append(images[indices])
+            frame_indices.append(indices)
         
-    return frames
+    return frames, frame_indices
     
 
 def sample_random_indices(clip_len, frame_sample_rate, seg_len):
@@ -150,6 +164,7 @@ def uniform_sample_indices(seg_len, percent_of_frames):
   indices = np.arange(start = 0, stop = seg_len, step = int(seg_len/num_examples))
   return indices
 
+from numpy import diff
 def get_flow_indices_der(flow_values, flow_values_frame_ids, seg_len, num_frames):
   dx = 0.0001
   dy = (diff(flow_values)/dx)

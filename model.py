@@ -54,7 +54,7 @@ class VideoMAEModel():
       inputs = [[] for i in range(NUM_SAMPLING_STRATS)]
       for i in tqdm(indices, desc = "Preprocessing:"):
         video_path = video_paths[i]
-        video_frames = get_frames_from_video_path_all_strats(sampling_strategy, video_path, num_frames)
+        video_frames, video_frame_indices = get_frames_from_video_path_all_strats(sampling_strategy, video_path, num_frames)
         for j in range(len(video_frames)):
           experiment_frames = video_frames[j]
           inp = self.image_processor(list(experiment_frames), return_tensors="pt")
@@ -64,7 +64,7 @@ class VideoMAEModel():
       for input in inputs:
         all_inputs = torch.stack(input).to(self.device)
         output.append(all_inputs)
-      return output
+      return output, video_frame_indices
     
     def preprocess_all_frames(self, indices, video_paths, stride=5):
       inputs = []
